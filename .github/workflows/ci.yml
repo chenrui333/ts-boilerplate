@@ -20,13 +20,13 @@ jobs:
       - name: Install Bun
         uses: oven-sh/setup-bun@735343b667d3e6f658f44d0eca948eb6282f2b76 # v2
         with:
-          bun-version-file: ".bun-version"
+          bun-version-file: '.bun-version'
 
       - name: Install Dependencies
         run: bun install
 
       - name: TypeScript Check
-        run: bunx tsc --noEmit
+        run: bun run typecheck
 
       - name: Run Tests
-        run: bun test --coverage
+        run: bun test:coverage

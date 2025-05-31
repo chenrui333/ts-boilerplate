@@ -1,4 +1,4 @@
-import { Calculator } from 'Calculator';
+import { Calculator } from '@src/Calculator';
 import { beforeEach, describe, expect, test } from 'vitest';
 
 describe('Calculator', () => {
